@@ -57,7 +57,7 @@ function displaygifs() {
 for  (i = 0; i < 25; i++) {
 
         $("#gif-view").prepend("<div id='gifs'></div>");
-        $("#gifs").append("Rated: " +response.data[i].rating+ "<br>");
+        $("#gifs").append("<br>" + "Rated: " +response.data[i].rating+ "<br>");
         $("#gifs").append('<img src="'+response.data[i].images.fixed_height.url+'" />')
       }
 
